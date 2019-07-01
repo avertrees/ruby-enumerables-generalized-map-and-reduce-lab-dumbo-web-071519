@@ -15,6 +15,7 @@ def reduce(source_array, starting_point=0)
   while i < source_array.length do
       puts "before"
       puts temp
+      puts source_array[i]
       temp = yield(temp, source_array[i])
       puts "after"
       puts temp
