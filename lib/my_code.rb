@@ -27,9 +27,10 @@ end
  
 # Wheat, sure!
 make_sandwich("Creamy peanut butter", "glittering sense of accomplishment") { |b| "#{b} on wheat" }
- 
+ "A Creamy peanut butter and glittering sense of accomplishment sandwich on wheat"
 # Bueno!
 make_sandwich("Creamy peanut butter", "glittering sense of accomplishment") { |b| "#{b} on tortilla" }
- 
+ "A Creamy peanut butter and glittering sense of accomplishment sandwich on tortilla"
 # Lewis Carroll's Kitchen
 make_sandwich("Creamy peanut butter", "glittering sense of accomplishment") { |b| "#{b.reverse} on #{"bread".reverse}" }
+"hciwdnas tnemhsilpmocca fo esnes gnirettilg dna rettub tunaep ymaerC A on daerb"
