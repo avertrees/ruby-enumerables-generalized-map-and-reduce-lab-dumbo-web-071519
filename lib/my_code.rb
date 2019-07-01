@@ -10,4 +10,11 @@ def map(source_array, block)
 end
 
 def reduce(source_array, starting_value=0)
-
+  temp = starting_point
+  i = 0
+  while i < source_array.length do
+      temp += source_array[i]
+      i += 1
+  end
+  return temp
+end
