@@ -11,10 +11,10 @@ def map(source_array, block)
 end
 
 def reduce(source_array, starting_value=0)
-  #temp = starting_point
+  temp = starting_point
   i = 0
   while i < source_array.length do
-      yield(source_array[i])
+      temp += yield(source_array[i])
       # <==temp += source_array[i]
       i += 1
   end
