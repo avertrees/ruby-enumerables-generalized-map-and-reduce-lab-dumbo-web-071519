@@ -1,7 +1,7 @@
 # Your Code Here
 def map(source_array, block)
 
-def reduce(source_array, block=0)
+def reduce(source_array, starting_value=0)
 def map_to_negativize(source_array)
   new = []
   i = 0
