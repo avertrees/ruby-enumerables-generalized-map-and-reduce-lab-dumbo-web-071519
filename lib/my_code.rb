@@ -3,8 +3,7 @@ def map(source_array, block)
   new = []
   i = 0
   while i < source_array.length do
-    yield(source_array[i])
-    # <== new.push( source_array[i] ) # <== Unique work
+    new.push( yield(source_array[i]) ) # <== Unique work
     i += 1
   end
   return new
