@@ -24,6 +24,13 @@ end
 def make_sandwich(element1, element2)
   yield("A #{element1} and #{element2} sandwich")
 end
+
+def make_sandwich(element1, element2)
+  yield("A #{element1} and #{element2} sandwich")
+end
+ 
+make_sandwich("grits", "abject terror") { |innards| "#{innards} on rye" }
+#=> "A grits and abject terror sandwich on rye"
  
 # Wheat, sure!
 make_sandwich("Creamy peanut butter", "glittering sense of accomplishment") { |b| "#{b} on wheat" }
