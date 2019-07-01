@@ -16,6 +16,9 @@ def reduce(source_array, starting_point=0)
       puts "before"
       puts temp
       puts source_array[i]
+      if source_array[i] = nil do
+        puts "nil"
+      end
       temp = yield(temp, source_array[i])
       puts "after"
       puts temp
