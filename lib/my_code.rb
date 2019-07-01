@@ -13,15 +13,10 @@ def reduce(source_array, starting_point=0)
   temp = starting_point
   i = 0
   while i < source_array.length do
-      puts "before"
-      puts temp
-      puts source_array[i]
       if source_array[i] == nil
-        puts "nil"
+        temp = false
       end
       temp = yield(temp, source_array[i])
-      puts "after"
-      puts temp
       i += 1
   end
   return temp
